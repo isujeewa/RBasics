@@ -9,7 +9,7 @@ library(neuralnet)
 library(knitr)
 
 #read from the excel data set and assign it to datatable variable
-forecast_datatable <- read_excel("C:\\Users\\sujeewae\\Documents\\MSC\\DM and ML\\CW1\\UoW_load_updated.xlsx") %>%
+forecast_datatable <- read_excel("C:\\Users\\sujeewae\\Documents\\load_updated.xlsx") %>%
   janitor::clean_names() %>%
   mutate( date_in_ymd=ymd(dates)) %>%
   select( -1) %>%
